@@ -7,6 +7,28 @@
 <meta name="description" content="Salon marketing built for beauty businesses that are done being invisible online. Local SEO, Google ads, and real strategy for hair salons, nail studios and spas.">
 <link rel="stylesheet" href="css/styles.css">
 </head>
+<style>
+  /* ── PROCESS ── */
+.process-section { background: var(--ivory); padding: 72px 48px; }
+.process-section h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 34px; font-weight: 400; color: var(--black);
+  line-height: 1.25; margin-bottom: 48px;
+}
+.process-section h2 em { font-style: italic; color: var(--cord); }
+.process-steps { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 24px; }
+.process-step { display: flex; flex-direction: column; }
+.step-bubble {
+  width: 44px; height: 44px; border-radius: 50%;
+  background: var(--cord); display: flex;
+  align-items: center; justify-content: center;
+  margin-bottom: 16px;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 16px; font-style: italic; color: var(--ivory);
+}
+.process-step h4 { font-size: 13.5px; font-weight: 500; color: var(--black); margin-bottom: 8px; }
+.process-step p { font-size: 12px; color: #6B6054; line-height: 1.65; }
+</style>
 <body>
 
 <!-- NAV -->
@@ -19,7 +41,7 @@
   <div class="nav-btn">
     <input type="checkbox" id="nav-check">
 
-<label for="nav-check" class="nav-closer-overlay"></label>
+<label  class="nav-closer-overlay"></label>
     <label for="nav-check">
       <span></span>
       <span></span>
@@ -28,15 +50,16 @@
   </div>
   
   <div class="nav-links">
+    <label class="menu-content-wrapper">
     <a href="comparison_page.html">What We Do</a>
     <a href="about_page_final.html">About Us</a>
     <a href="packages_page_final.html">Packages</a>
     <a href="blog_page_seo.html">Blogs</a>
-    <a href="#">FAQ</a>
     <a href="careers_page.html">Careers</a>
     <a href="consultation_page.html">Contact Us</a>
     <a href="directory_page_seo.html">Map</a>
     <a href="free_audit_page.html" class="nav-cta">Free Salon Audit</a>
+    </label>
   </div>
 </nav>
 
