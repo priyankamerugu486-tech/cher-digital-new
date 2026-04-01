@@ -152,6 +152,9 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 .cta-left p { font-size: 13px; color: rgba(248,246,227,.55); line-height: 1.7; }
 .cta-btn { display: inline-flex; align-items: center; gap: 10px; background: var(--ivory); color: var(--cord); font-size: 14px; font-weight: 500; padding: 14px 26px; border-radius: 50px; border: none; cursor: pointer; font-family: inherit; transition: all .2s; text-decoration: none; white-space: nowrap; flex-shrink: 0; width: 16% !important; }
 .cta-btn:hover { background: #F0E8D4; transform: translateY(-1px); }
+@media(max-width:600px) {
+  .cta-btn { width: 100% !important; }
+}
 
 
 </style>
@@ -462,7 +465,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
     <h2>Want to see the team<br><em>in action on your salon?</em></h2>
     <p>Get the free Cher Salon Audit PDF — we'll analyse your Google presence and show you exactly what's holding back your bookings. No call. No pitch. Just honest feedback.</p>
   </div>
-  <a href="/free-audit" class="cta-btn">Get the free audit PDF →</a>
+  <a href="free_audit_page.html" class="cta-btn">Get the free audit PDF →</a>
 </div>
 
 <!-- FOOTER -->
@@ -481,14 +484,15 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
       <a class="flink" href="packages_page_final.html">Packages</a>
       <a class="flink" href="blog_page_seo.html">Blogs</a>
       <a class="flink" href="free_audit_page.html">audit</a>
-      <a class="flink" href="careers_page.html">career</a>
-       <a class="flink" href="directory_page_seo.html">Map</a>
+      <!-- <a class="flink" href="careers_page.html">career</a> -->
+       <!-- <a class="flink" href="directory_page_seo.html">Map</a> -->
       <a class="flink" href="consultation_page.html">contact us</a>
     </div>
     <div>
+      
       <div class="fcl">Get in touch</div>
-      <div class="fci">(413) 377-8945</div>
-      <div class="fci">hello@cherdigitalanalytics.com</div>
+      <div class="fci"><a href="tel:+(413) 377-8945">(413) 377-8945</a></div>
+      <div class="fci"><a href="mailto:hello@cherdigitalanalytics.com" class="__cf_email__">hello@cherdigitalanalytics.com</a></div>
     </div>
   </div>
   <div class="footer-bottom">

@@ -126,11 +126,12 @@ body{font-family:var(--sans);background:var(--ivory);color:var(--black);overflow
 .cta-btn {
   width: 30%;
 }
+
 @media (max-width:960px) {
   .cta-btn {
   width: 60%;
   }
-
+.for-grid{grid-template-columns:repeat(1,minmax(0,1fr));}
   
 }
 </style>
@@ -159,7 +160,7 @@ body{font-family:var(--sans);background:var(--ivory);color:var(--black);overflow
     <a href="about_page_final.html">About Us</a>
     <a href="packages_page_final.html">Packages</a>
     <a href="blog_page_seo.html">Blogs</a>
-    <a href="#">FAQ</a>
+    <!-- <a href="#">FAQ</a> -->
     <a href="careers_page.html">Careers</a>
     <a href="consultation_page.html">Contact Us</a>
     <a href="directory_page_seo.html">Map</a>
@@ -404,7 +405,7 @@ body{font-family:var(--sans);background:var(--ivory);color:var(--black);overflow
       <div class="pn-title">Want to browse our plans first?</div>
       <div class="pn-desc">We offer three packages — plus fully customised plans for salons with specific needs. Take a look before the call so you can come with questions.</div>
     </div>
-    <a href="/salon-marketing-packages" class="pn-btn">
+    <a href="packages_page_final.html" class="pn-btn">
       View packages &amp; pricing
       <span class="pn-arr"><svg viewBox="0 0 9 9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4.5h7M4.5 1l3.5 3.5L4.5 8"/></svg></span>
     </a>
@@ -422,7 +423,7 @@ body{font-family:var(--sans);background:var(--ivory);color:var(--black);overflow
   <div class="cr">
     <div class="cr-icon"><svg viewBox="0 0 14 14"><rect x="1" y="3" width="12" height="9" rx="1.5"/><path d="M1 3l6 5 6-5"/></svg></div>
     <div class="cr-lbl">Email us</div>
-    <a href="#" class="cr-val"><span class="__cf_email__">mailto:hello@cherdigitalanalytics.com</span></a>
+    <a href="#" class="cr-val"><span class="__cf_email__" style="color: #1B1B1D;">mailto:hello@cherdigitalanalytics.com</span></a>
     <div class="cr-sub">We respond within 24 hours</div>
   </div>
   <div class="cr">
@@ -475,11 +476,11 @@ body{font-family:var(--sans);background:var(--ivory);color:var(--black);overflow
       <p>Pick a time, join the call, and leave knowing exactly what more bookings actually looks like for your salon — and whether Cher is the right team to make it happen.</p>
     </div>
     <div class="fc-btns">
-      <a href="#book-call" class="cta-btn">
+      <a href="consultation_page.html" class="cta-btn">
         Pick my slot now
         <span class="cta-arr"><svg viewBox="0 0 9 9"><path d="M1 4.5h7M4.5 1l3.5 3.5L4.5 8"/></svg></span>
       </a>
-      <a href="/salon-marketing-packages" class="cta-ghost">Browse packages &amp; pricing first →</a>
+      <a href="packages_page_final.html" class="cta-ghost">Browse packages &amp; pricing first →</a>
       <span class="cta-note">Free · 30 minutes · No obligation · Confirm in seconds</span>
     </div>
   </div>
@@ -499,14 +500,14 @@ body{font-family:var(--sans);background:var(--ivory);color:var(--black);overflow
       <a class="flink" href="packages_page_final.html">Packages</a>
       <a class="flink" href="blog_page_seo.html">Blogs</a>
       <a class="flink" href="free_audit_page.html">Free salon audit</a>
-      <a class="flink" href="careers_page.html">career</a>
-       <a class="flink" href="directory_page_seo.html">Map</a>
+      <!-- <a class="flink" href="careers_page.html">career</a> -->
+       <!-- <a class="flink" href="directory_page_seo.html">Map</a> -->
       <a class="flink" href="consultation_page.html">contact us</a>
     </div>
     <div>
       <div class="fcl">Get in touch</div>
-      <div class="fci">(413) 377-8945</div>
-      <div class="fci"><a href="#" class="__cf_email__">hello@cherdigitalanalytics.com</a></div>
+      <div class="fci"><a href="tel:+(413) 377-8945">(413) 377-8945</a></div>
+      <div class="fci"><a href="mailto:hello@cherdigitalanalytics.com" class="__cf_email__">hello@cherdigitalanalytics.com</a></div>
       <div class="fci">Leander, Texas 78641</div>
     </div>
   </div>
