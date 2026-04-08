@@ -9,6 +9,7 @@
 <meta name="description" content="Free salon marketing guides written by specialists. Learn local SEO for salons, Google Ads strategy, how to rank on Google Maps, and proven tips to get more bookings. Updated weekly.">
 <meta name="keywords" content="salon marketing tips, local SEO for salons, Google Ads for hair salons, how to get more salon clients, salon SEO 2025, nail salon marketing, spa marketing, Google Business Profile salon, hair salon near me SEO">
 <link rel="canonical" href="https://cherdigitalanalytics.com/blogs">
+<link rel="shortcut icon" href="images/cher-favicon.png">
 <link rel="stylesheet" href="css/styles.css">
 <meta name="robots" content="index, follow">
 <meta name="author" content="Cher Digital Analytics">
@@ -76,8 +77,6 @@
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap');
-
 :root {
   --rosy:  #C49797;
   --cord:  #834A49;
@@ -86,28 +85,9 @@
   --ivory: #F8F6E3;
   --card:  #FDFAF4;
 }
-* { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--ivory); color: var(--black); line-height: 1.6; }
 
-/* HERO */
-.blog-hero { background: var(--olive); padding: 40px 40px 52px; position: relative; overflow: hidden; }
-.hero-blob-1 { position: absolute; top: -80px; right: -80px; width: 340px; height: 340px; border-radius: 50%; background: rgba(196,151,151,0.07); pointer-events: none; }
-.hero-blob-2 { position: absolute; bottom: -50px; left: 30%; width: 180px; height: 180px; border-radius: 50%; background: rgba(131,74,73,0.05); pointer-events: none; }
-.hero-grid { display: grid; grid-template-columns: 1fr 340px; gap: 48px; align-items: start; position: relative; z-index: 1; }
-.hero-left .eyebrow { font-size: 10px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--rosy); margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
-.eyebrow-dash { width: 26px; height: 0.5px; background: var(--rosy); }
-.blog-hero h1 { font-family: 'Playfair Display', Georgia, serif; font-size: 40px; font-weight: 400; color: var(--ivory); line-height: 1.15; margin-bottom: 16px; }
-.blog-hero h1 em { font-style: italic; color: var(--rosy); }
-.hero-desc { font-size: 13.5px; color: rgba(248,246,227,0.56); line-height: 1.85; margin-bottom: 28px; max-width: 520px; }
 
-.hero-stats { display: flex; flex-direction: column; gap: 10px; padding-top: 8px; border-top: 0.5 solid transparent ipo !important;}
-@media (max-width: 960px) {
-      .hero-grid {
-        grid-template-columns: 1fr;
-        gap: 36px;
-    }
-
-}
 </style>
 </head>
 <body>
@@ -115,27 +95,30 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 <!-- NAV -->
 <nav class="nav">
   <div class="nav-logo">
-    <a href="index.html"><img src="images/logo.png" alt="Cher digital anlytics logo" class=""></a>
+    <a href="index.html">
+      <img src="images/logo.png" alt="Cher digital anlytics logo">
+    </a>
   </div>
   
   <input type="checkbox" id="nav-check">
-  <div class="nav-btn">
-    <input type="checkbox" id="nav-check">
 
-<label for="nav-check" class="nav-closer-overlay"></label>
+  <div class="nav-btn">
     <label for="nav-check">
       <span></span>
       <span></span>
       <span></span>
     </label>
   </div>
+
+  <label for="nav-check" class="nav-closer-overlay"></label>
   
   <div class="nav-links">
+    <label for="nav-check" class="nav-close-btn">&times;</label>
+    
     <a href="comparison_page.html">What We Do</a>
     <a href="about_page_final.html">About Us</a>
     <a href="packages_page_final.html">Packages</a>
     <a href="blog_page_seo.html">Blogs</a>
-    <!-- <a href="#">FAQ</a> -->
     <a href="careers_page.html">Careers</a>
     <a href="consultation_page.html">Contact Us</a>
     <a href="directory_page_seo.html">Map</a>
@@ -153,14 +136,14 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 </div>
 
 <!-- HERO -->
-<header class="blog-hero">
-  <div class="hero-blob-1"></div>
-  <div class="hero-blob-2"></div>
-  <div class="hero-grid">
-    <div class="hero-left">
-      <div class="eyebrow"><span class="eyebrow-dash"></span>Salon Marketing Blog</div>
+<header class="blog-hero-sec">
+  <div class="blog-hero-blob-1"></div>
+  <div class="blog-hero-blob-2"></div>
+  <div class="blog-hero-grid">
+    <div class="blog-hero-left">
+      <div class="eyebrow"><span class="blog-eyebrow-dash"></span>Salon Marketing Blog</div>
       <h1>Real Marketing Tips for<br>Salons That Are <em>Done Guessing</em></h1>
-      <p class="hero-desc">Local SEO, Google Ads, social media strategy and analytics — written for hair salons, nail studios, spas and beauty businesses. No jargon. No fluff. Just the stuff that actually fills your books.</p>
+      <p class="blog-hero-desc">Local SEO, Google Ads, social media strategy and analytics — written for hair salons, nail studios, spas and beauty businesses. No jargon. No fluff. Just the stuff that actually fills your books.</p>
 
       <div class="hero-search" role="search">
         <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.5" cy="6.5" r="5"/><path d="M11 11l3 3"/></svg>
@@ -178,7 +161,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
       </nav>
     </div>
 
-    <aside class="hero-stats" aria-label="Blog stats">
+    <aside class="blog-hero-stats" aria-label="Blog stats">
       <div class="hero-stat accent">
         <div class="hs-num">50+</div>
         <div class="hs-label">Free guides written specifically for beauty business owners</div>
@@ -392,7 +375,8 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
         <div class="audit-point">Website conversion issues</div>
         <div class="audit-point">Your top 3 quick wins</div>
       </div>
-      <a href="free_audit_page.html" class="audit-cta">Get my free audit PDF →</a>
+      <a href="free_audit_page.html" class="audit-cta">Get my free audit PDF <svg viewBox="0 0 12 12"><path d="M2 6h8M6 2l4 4-4 4"></path></svg>
+</a>
       <div class="audit-note">Free · Delivered within 48 hrs · No pitch</div>
     </div>
 
@@ -492,7 +476,8 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
       <h3>One email a week.<br>No spam. Ever.</h3>
       <p>Salon marketing tips that take 3 minutes to read and actually change something. Unsubscribe anytime.</p>
       <input type="email" class="nl-input" placeholder="Your email address" aria-label="Email for newsletter">
-      <button class="nl-btn">Send me the tips →</button>
+      <button class="nl-btn">Send me the tips<svg viewBox="0 0 12 12"><path d="M2 6h8M6 2l4 4-4 4"></path></svg>
+</button>
       <div class="nl-note">Join 2,000+ salon owners. Unsubscribe anytime.</div>
     </div>
 
@@ -565,16 +550,27 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
       <!-- <a class="footer-link" href="careers_page.html">career</a> -->
        <!-- <a class="footer-link" href="directory_page_seo.html">Map</a> -->
       <a class="footer-link" href="consultation_page.html">contact us</a>
+
     </div>
     <div>
-      <div class="footer-col-label">Get in touch</div>
+       <div class="footer-col-label">Get in touch</div>
       <div class="footer-contact-item"><a href="tel:+(413) 377-8945">(413) 377-8945</a></div>
       <div class="footer-contact-item"><a href="mailto:hello@cherdigitalanalytics.com">hello@cherdigitalanalytics.com</a></div>
     </div>
+    <div>
+       <div class="footer-col-label">Stalk us on our socials</div>
+       <p class="footer-text">( we promise we don’t just post spreadsheets)</p>
+      <div class="icons social">
+        <a href="https://www.instagram.com/cherdigitalanalytics?igsh=MTZ5dWk3Z3cyOTZ6NA%3D%3D&amp;utm_source=qr"><img src="images/instagram.png" alt="salon-marketing-instagram"></a>
+        <a href="https://www.linkedin.com/company/cherdigitalanalytics/?viewAsMember=true"><img src="images/linkedin.png" alt="salon-marketing-linkedin"></a>
+        <a href="https://www.pinterest.com/cherdigitalanalytics/?invite_code=0a62898b98db44f68b26e4aa1400467b&amp;sender=592505032134619650"><img src="images/pinterest.png" alt="salon-marketing-pinterest"></a>
+      </div>
+      
+    </div>
   </div>
   <div class="footer-bottom">
-    <p>© 2025 Cher Digital Analytics. Built for salon owners who are done being invisible online.</p>
-    <a class="footer-privacy" href="/privacy">Privacy policy</a>
+    <p>© 2026 Cher Digital Analytics. Built for salon owners who are done being invisible online.</p>
+    <a class="footer-privacy" href="privacy.html">Privacy policy</a>
   </div>
 </footer>
 

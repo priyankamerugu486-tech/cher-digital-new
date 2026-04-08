@@ -6,58 +6,40 @@
 <title>Cher Digital Analytics | Salon Marketing That Fills Your Books</title>
 <meta name="description" content="Salon marketing built for beauty businesses that are done being invisible online. Local SEO, Google ads, and real strategy for hair salons, nail studios and spas.">
 <link rel="stylesheet" href="css/styles.css">
+ <link rel="shortcut icon" href="images/cher-favicon.png">
 </head>
 <style>
-  /* ── PROCESS ── */
-.process-section { background: var(--ivory); padding: 72px 48px; }
-.process-section h2 {
-  font-family: 'Playfair Display', Georgia, serif;
-  font-size: 34px; font-weight: 400; color: var(--black);
-  line-height: 1.25; margin-bottom: 48px;
-}
-.process-section h2 em { font-style: italic; color: var(--cord); }
-.process-steps { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 24px; }
-.process-step { display: flex; flex-direction: column; }
-.step-bubble {
-  width: 44px; height: 44px; border-radius: 50%;
-  background: var(--cord); display: flex;
-  align-items: center; justify-content: center;
-  margin-bottom: 16px;
-  font-family: 'Playfair Display', Georgia, serif;
-  font-size: 16px; font-style: italic; color: var(--ivory);
-}
-.process-step h4 { font-size: 13.5px; font-weight: 500; color: var(--black); margin-bottom: 8px; }
-.process-step p { font-size: 12px; color: #6B6054; line-height: 1.65; }
-@media (max-width: 600px) {
-  .process-steps {
-    display: grid;
-   grid-template-columns: repeat(2, minmax(0,1fr));
-    
-}
-}
+  /* Page load ayye fraction of second lo menu kanipinchakunda hide chestundi */
+  @media (max-width: 1024px) {
+    .nav-links { 
+      display: none; 
+    }
+  }
 </style>
 <body>
 
-<!-- NAV -->
 <nav class="nav">
   <div class="nav-logo">
-    <a href="index.html"><img src="images/logo.png" alt="Cher digital anlytics logo" class=""></a>
+    <a href="index.html">
+      <img src="images/logo.png" alt="Cher digital anlytics logo">
+    </a>
   </div>
   
   <input type="checkbox" id="nav-check">
-  <div class="nav-btn">
-    <input type="checkbox" id="nav-check">
 
-<label  class="nav-closer-overlay"></label>
+  <div class="nav-btn">
     <label for="nav-check">
       <span></span>
       <span></span>
       <span></span>
     </label>
   </div>
+
+  <label for="nav-check" class="nav-closer-overlay"></label>
   
   <div class="nav-links">
-    <!-- <label class="menu-content-wrapper"> -->
+    <label for="nav-check" class="nav-close-btn">&times;</label>
+    
     <a href="comparison_page.html">What We Do</a>
     <a href="about_page_final.html">About Us</a>
     <a href="packages_page_final.html">Packages</a>
@@ -66,7 +48,6 @@
     <a href="consultation_page.html">Contact Us</a>
     <a href="directory_page_seo.html">Map</a>
     <a href="free_audit_page.html" class="nav-cta">Free Salon Audit</a>
-    <!-- </label> -->
   </div>
 </nav>
 
@@ -135,7 +116,7 @@
       <p>When you reach out, you'll talk to someone who already knows your goals, your numbers, and your local market. Not a stranger reading from a script. Not a chatbot.</p>
     </div>
   </div>
-  <a href="#" class="what-cta">See what's in each plan →</a>
+  <a href="#" class="what-cta">See what's in each plan <svg viewBox="0 0 12 12"><path d="M2 6h8M6 2l4 4-4 4"></path></svg></a>
 </section>
 
 <!-- FOR WHO -->
@@ -171,27 +152,27 @@
 </section>
 
 <!-- PROCESS -->
-<section class="process-section">
+<section class="main-process-section">
   <div class="s-eyebrow">How it works</div>
   <h2>From Sign-Up to More Bookings —<br><em>Here's What Actually Happens</em></h2>
-  <div class="process-steps">
-    <div class="process-step">
-      <div class="step-bubble">1</div>
+  <div class="main-process-steps">
+    <div class="main-process-step">
+      <div class="main-step-bubble">1</div>
       <h4>We audit what you have</h4>
       <p>Google Business Profile, local rankings, your website, your competitors. You'll see exactly where you stand before we change a single thing.</p>
     </div>
-    <div class="process-step">
-      <div class="step-bubble">2</div>
+    <div class="main-process-step">
+      <div class="main-step-bubble">2</div>
       <h4>We build your visibility system</h4>
       <p>Ads set up, SEO cleaned up, analytics connected and making sense. Most clients are live within 7–10 days.</p>
     </div>
-    <div class="process-step">
-      <div class="step-bubble">3</div>
+    <div class="main-process-step">
+      <div class="main-step-bubble">3</div>
       <h4>Your monthly report lands</h4>
       <p>Written by a real member of the Cher team — in plain English, for your specific salon. Not a template. Not auto-generated at 3am.</p>
     </div>
-    <div class="process-step">
-      <div class="step-bubble">4</div>
+    <div class="main-process-step">
+      <div class="main-step-bubble">4</div>
       <h4>We walk you through it</h4>
       <p>End-of-month call — what worked, what didn't, what's next. You leave actually understanding your business numbers.</p>
     </div>
@@ -317,7 +298,7 @@
       <div class="s-eyebrow">Ready when you are</div>
       <h2>Let's Get Your Salon<br><em>The Attention It Deserves</em></h2>
       <p>Start with the free Cher Salon Audit PDF. We'll show you <strong>exactly what's holding back your bookings</strong> and what we'd do about it — delivered to your inbox, no call required, no commitment attached.</p>
-      <a href="free_audit_page.html" class="btn-contact">Get my free audit PDF →</a>
+      <a href="free_audit_page.html" class="btn-contact">Get my free audit PDF <svg viewBox="0 0 12 12"><path d="M2 6h8M6 2l4 4-4 4"></path></svg> </a>
       <div class="contact-reassure">Free · Delivered within 48 hours · No pitch. Just honest feedback.</div>
     </div>
     <div class="contact-right">
@@ -365,10 +346,20 @@
       <div class="footer-contact-item"><a href="tel:+(413) 377-8945">(413) 377-8945</a></div>
       <div class="footer-contact-item"><a href="mailto:hello@cherdigitalanalytics.com">hello@cherdigitalanalytics.com</a></div>
     </div>
+    <div>
+       <div class="footer-col-label">Stalk us on our socials</div>
+       <p class="footer-text">( we promise we don’t just post spreadsheets)</p>
+      <div class="icons social">
+        <a href="https://www.instagram.com/cherdigitalanalytics?igsh=MTZ5dWk3Z3cyOTZ6NA%3D%3D&amp;utm_source=qr"><img src="images/instagram.png" alt="salon-marketing-instagram"></a>
+        <a href="https://www.linkedin.com/company/cherdigitalanalytics/?viewAsMember=true"><img src="images/linkedin.png" alt="salon-marketing-linkedin"></a>
+        <a href="https://www.pinterest.com/cherdigitalanalytics/?invite_code=0a62898b98db44f68b26e4aa1400467b&amp;sender=592505032134619650"><img src="images/pinterest.png" alt="salon-marketing-pinterest"></a>
+      </div>
+      
+    </div>
   </div>
   <div class="footer-bottom">
-    <p>© 2025 Cher Digital Analytics. Built for salon owners who are done being invisible online.</p>
-    <a class="footer-privacy" href="#">Privacy policy</a>
+    <p>© 2026 Cher Digital Analytics. Built for salon owners who are done being invisible online.</p>
+    <a class="footer-privacy" href="privacy.html">Privacy policy</a>
   </div>
 </footer>
 
@@ -500,6 +491,30 @@
   document.getElementById('closeBtn').addEventListener('click', function() {
     document.getElementById('overlay').style.display = 'none';
   });
+  
+
+// nav menu
+  document.addEventListener("DOMContentLoaded", () => {
+  const checkbox = document.getElementById("nav-check");
+  const overlay = document.querySelector(".nav-closer-overlay");
+
+  if (overlay) {
+    overlay.addEventListener("click", () => {
+      checkbox.checked = false; // Overlay click chesthe checkbox off chey
+    });
+  }
+});
+
+  // Edaina link click chesina ventane menu close avali (Single page links ki idi useful)
+  const navLinks = document.querySelectorAll(".nav-links a");
+  navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      navCheck.checked = false;
+    });
+  });
+});
+
+
 </script>
 </body>
 </html>

@@ -8,6 +8,7 @@
 <meta name="description" content="Join Cher Digital Analytics — a US-based salon marketing agency hiring remote talent in India. Open roles in social media design and paid media marketing analytics. Apply now.">
 <meta name="keywords" content="Cher Digital Analytics careers, salon marketing jobs, social media designer job remote India, digital marketing contractor job, paid media jobs remote, marketing analytics jobs India, beauty marketing careers">
 <link rel="canonical" href="https://www.cherdigitalanalytics.com/careers">
+<link rel="shortcut icon" href="images/cher-favicon.png">
 <link rel="stylesheet" href="css/styles.css">
 <meta name="robots" content="index, follow">
 <meta name="author" content="Cher Digital Analytics">
@@ -167,30 +168,7 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 body { font-family: var(--sans); background: var(--ivory); color: var(--black); overflow-x: hidden; }
-.sidebar { background: var(--black); padding: 56px 32px 72px; position: sticky; top: 58px; min-height: calc(100vh - 58px); }
-.hero{
-  background: var(--olive);
-    min-height: 88vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 0 48px 64px;
-    position: relative;
-    overflow: hidden;
-}
-/* FAQ */
-.faq-section { background: var(--card); padding: 72px 48px; }
-.faq-inner { max-width: 800px; margin: 0;}
-.faq-top { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 36px; gap: 24px; }
-.faq-top h2 { font-family: var(--serif); font-size: 32px; font-weight: 400; color: var(--black); line-height: 1.2; }
-.faq-top h2 em { font-style: italic; color: var(--cord); }
-.faq-top p { font-size: 13px; font-weight: 300; color: #7A7060; line-height: 1.7; max-width: 320px; text-align: right; }
-.faq-items { display: flex; flex-direction: column; }
-.faq-item { border-bottom: .5px solid rgba(27,27,29,.08); padding: 22px 0; }
-.faq-item:first-child { border-top: .5px solid rgba(27,27,29,.08); }
-.faq-q { font-size: 14px; font-weight: 500; color: var(--black); margin-bottom: 9px; display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; }
-.faq-icon { color: var(--cord); flex-shrink: 0; font-size: 16px; }
-.faq-a { font-size: 13px; font-weight: 300; color: #7A7060; line-height: 1.8; }
+
 </style>
 </head>
 <body>
@@ -198,27 +176,30 @@ body { font-family: var(--sans); background: var(--ivory); color: var(--black); 
 <!-- NAV -->
 <nav class="nav">
   <div class="nav-logo">
-    <a href="index.html"><img src="images/logo.png" alt="Cher digital anlytics logo" class=""></a>
+    <a href="index.html">
+      <img src="images/logo.png" alt="Cher digital anlytics logo">
+    </a>
   </div>
   
   <input type="checkbox" id="nav-check">
-  <div class="nav-btn">
-    <input type="checkbox" id="nav-check">
 
-<label for="nav-check" class="nav-closer-overlay"></label>
+  <div class="nav-btn">
     <label for="nav-check">
       <span></span>
       <span></span>
       <span></span>
     </label>
   </div>
+
+  <label for="nav-check" class="nav-closer-overlay"></label>
   
   <div class="nav-links">
+    <label for="nav-check" class="nav-close-btn">&times;</label>
+    
     <a href="comparison_page.html">What We Do</a>
     <a href="about_page_final.html">About Us</a>
     <a href="packages_page_final.html">Packages</a>
     <a href="blog_page_seo.html">Blogs</a>
-    <!-- <a href="#">FAQ</a> -->
     <a href="careers_page.html">Careers</a>
     <a href="consultation_page.html">Contact Us</a>
     <a href="directory_page_seo.html">Map</a>
@@ -226,15 +207,10 @@ body { font-family: var(--sans); background: var(--ivory); color: var(--black); 
   </div>
 </nav>
 
-<!-- BREADCRUMB -->
-<div class="bc-wrap">
-  <nav class="bc" aria-label="Breadcrumb">
-    <a href="/">Home</a><span>›</span><span>Careers</span>
-  </nav>
-</div>
+
 
 <!-- HERO -->
-<header class="hero">
+<header class="career-hero">
   <div class="hero-bg-word" aria-hidden="true">Careers</div>
   <div class="hero-top-tag" aria-hidden="true">
     <div class="ht-dot"></div>
@@ -277,7 +253,7 @@ body { font-family: var(--sans); background: var(--ivory); color: var(--black); 
   </div>
 </div>
 
-<!-- MAIN + SIDEBAR -->
+<!-- MAIN + career-SIDEBAR -->
 <div class="careers-main">
 
   <!-- LISTINGS -->
@@ -495,8 +471,8 @@ body { font-family: var(--sans); background: var(--ivory); color: var(--black); 
 
   </main>
 
-  <!-- SIDEBAR -->
-  <aside class="sidebar">
+  <!-- career-SIDEBAR -->
+  <aside class="career-sidebar">
 
     <div class="sb-section">
       <div class="sb-label">Why join Cher</div>
@@ -537,45 +513,47 @@ body { font-family: var(--sans); background: var(--ivory); color: var(--black); 
     <div class="sb-section">
       <div class="sb-label">Who we are</div>
       <p class="sb-about-text">Cher Digital Analytics is a US-based salon marketing agency. We handle Google Ads, local SEO, social media and analytics for hair salons, nail studios and spas — and we do it with a small, focused team that actually cares.</p>
-      <a href="/about" class="sb-about-link">Meet the team <span>→</span></a>
+      <a href="about_page_final.html" class="sb-about-link">Meet the team <span><svg viewBox="0 0 12 12"><path d="M2 6h8M6 2l4 4-4 4"></path></svg>
+</span></a>
     </div>
 
     <div class="sb-cta-card">
       <div class="sb-cta-title">Not the right role — but interested?</div>
       <div class="sb-cta-desc">Drop us a note at hello@cherdigitalanalytics.com. We keep great applications on file for when new roles open up.</div>
-      <a href="mailto:hello@cherdigitalanalytics.com?subject=General Application — Cher Digital" class="sb-cta-btn">Get in touch →</a>
+      <a href="mailto:hello@cherdigitalanalytics.com?subject=General Application — Cher Digital" class="sb-cta-btn">Get in touch <svg viewBox="0 0 12 12"><path d="M2 6h8M6 2l4 4-4 4"></path></svg>
+</a>
     </div>
 
   </aside>
 </div>
 
 <!-- FAQ -->
-<section class="faq-section">
-  <div class="faq-inner">
-    <div class="faq-top">
+<section class="career-faq-section">
+  <div class="career-faq-inner">
+    <div class="career-faq-top">
       <h2>Questions before<br>you <em>apply.</em></h2>
       <p>Everything you wanted to know about working with Cher Digital — answered honestly.</p>
     </div>
-    <div class="faq-items">
-      <div class="faq-item">
-        <div class="faq-q">Are the roles fully remote? <span class="faq-icon">+</span></div>
-        <div class="faq-a">Yes. Both roles are 100% remote and based in India. You'll be working with a US-based team — so strong English communication and the ability to work across time zones is important.</div>
+    <div class="career-faq-items">
+      <div class="career-faq-item active">
+        <div class="career-faq-q">Are the roles fully remote? <span class="faq-icon">+</span></div>
+        <div class="career-faq-a">Yes. Both roles are 100% remote and based in India. You'll be working with a US-based team — so strong English communication and the ability to work across time zones is important.</div>
       </div>
-      <div class="faq-item">
-        <div class="faq-q">What's the stipend for the Social Media Designer role? <span class="faq-icon">+</span></div>
-        <div class="faq-a">₹25,000–₹30,000 per month for a 3-month contract, starting March 2026. There is a clear opportunity for full-time conversion based on your performance during the contract.</div>
+      <div class="career-faq-item">
+        <div class="career-faq-q">What's the stipend for the Social Media Designer role? <span class="faq-icon">+</span></div>
+        <div class="career-faq-a">₹25,000–₹30,000 per month for a 3-month contract, starting March 2026. There is a clear opportunity for full-time conversion based on your performance during the contract.</div>
       </div>
-      <div class="faq-item">
-        <div class="faq-q">Is a portfolio really mandatory for the design role? <span class="faq-icon">+</span></div>
-        <div class="faq-a">Yes — without exception. Applications without a portfolio will not be reviewed. Your portfolio must show social media design samples, short-form video work, and strong brand consistency. A link to your work is fine.</div>
+      <div class="career-faq-item">
+        <div class="career-faq-q">Is a portfolio really mandatory for the design role? <span class="faq-icon">+</span></div>
+        <div class="career-faq-a">Yes — without exception. Applications without a portfolio will not be reviewed. Your portfolio must show social media design samples, short-form video work, and strong brand consistency. A link to your work is fine.</div>
       </div>
-      <div class="faq-item">
-        <div class="faq-q">What certifications do I need for the marketing contractor role? <span class="faq-icon">+</span></div>
-        <div class="faq-a">Google Analytics and Google Ads certifications are required. Please include your certification links or screenshots when you apply. Experience with local businesses or salon brands is a strong advantage.</div>
+      <div class="career-faq-item">
+        <div class="career-faq-q">What certifications do I need for the marketing contractor role? <span class="faq-icon">+</span></div>
+        <div class="career-faq-a">Google Analytics and Google Ads certifications are required. Please include your certification links or screenshots when you apply. Experience with local businesses or salon brands is a strong advantage.</div>
       </div>
-      <div class="faq-item">
-        <div class="faq-q">How quickly will I hear back? <span class="faq-icon">+</span></div>
-        <div class="faq-a">If shortlisted, you'll hear from us within 48 hours of applying. If you haven't heard back within 5 business days, you're welcome to follow up at hello@cherdigitalanalytics.com.</div>
+      <div class="career-faq-item">
+        <div class="career-faq-q">How quickly will I hear back? <span class="faq-icon">+</span></div>
+        <div class="career-faq-a">If shortlisted, you'll hear from us within 48 hours of applying. If you haven't heard back within 5 business days, you're welcome to follow up at hello@cherdigitalanalytics.com.</div>
       </div>
     </div>
   </div>
@@ -583,34 +561,64 @@ body { font-family: var(--sans); background: var(--ivory); color: var(--black); 
 
 <!-- FOOTER -->
 <footer class="footer">
-  <div class="ft">
-    <div>
-      <div class="fl">Cher Digital Analytics</div>
-      <p class="fp">Helping salon owners fill their books — without the marketing overwhelm.</p>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="footer-logo">Cher Digital Analytics</div>
+      <p>Helping salon owners fill their books — without the marketing overwhelm.</p>
     </div>
     <div>
-      <div class="fcl">Quick links</div>
-      <a class="flink" href="comparison_page.html">What we do</a>
-      <a class="flink" href="about_page_final.html">About us</a>
-      <a class="flink" href="packages_page_final.html">Packages</a>
-      <a class="flink" href="blog_page_seo.html">Blogs</a>
-      <a class="flink" href="free_audit_page.html">audit</a>
-      <!-- <a class="flink" href="careers_page.html">career</a> -->
-       <!-- <a class="flink" href="directory_page_seo.html">Map</a> -->
-      <a class="flink" href="consultation_page.html">contact us</a>
+      <div class="footer-col-label">Quick links</div>
+      <a class="footer-link" href="comparison_page.html">What we do</a>
+      <a class="footer-link" href="about_page_final.html">About us</a>
+      <a class="footer-link" href="packages_page_final.html">Packages</a>
+      <a class="footer-link" href="blog_page_seo.html">Blogs</a>
+      <a class="footer-link" href="free_audit_page.html">audit</a>
+      <!-- <a class="footer-link" href="careers_page.html">career</a> -->
+       <!-- <a class="footer-link" href="directory_page_seo.html">Map</a> -->
+      <a class="footer-link" href="consultation_page.html">contact us</a>
+
+    </div>
+    <div>
+       <div class="footer-col-label">Get in touch</div>
+      <div class="footer-contact-item"><a href="tel:+(413) 377-8945">(413) 377-8945</a></div>
+      <div class="footer-contact-item"><a href="mailto:hello@cherdigitalanalytics.com">hello@cherdigitalanalytics.com</a></div>
+    </div>
+    <div>
+       <div class="footer-col-label">Stalk us on our socials</div>
+       <p class="footer-text">( we promise we don’t just post spreadsheets)</p>
+      <div class="icons social">
+        <a href="https://www.instagram.com/cherdigitalanalytics?igsh=MTZ5dWk3Z3cyOTZ6NA%3D%3D&amp;utm_source=qr"><img src="images/instagram.png" alt="salon-marketing-instagram"></a>
+        <a href="https://www.linkedin.com/company/cherdigitalanalytics/?viewAsMember=true"><img src="images/linkedin.png" alt="salon-marketing-linkedin"></a>
+        <a href="https://www.pinterest.com/cherdigitalanalytics/?invite_code=0a62898b98db44f68b26e4aa1400467b&amp;sender=592505032134619650"><img src="images/pinterest.png" alt="salon-marketing-pinterest"></a>
+      </div>
       
     </div>
-    <div>
-      <div class="fcl">Get in touch</div>
-      <div class="fci"><a href="tel:+(413) 377-8945">(413) 377-8945</a></div>
-      <div class="fci"><a href="mailto:hello@cherdigitalanalytics.com">hello@cherdigitalanalytics.com</a></div>
-    </div>
   </div>
-  <div class="fb">
+  <div class="footer-bottom">
     <p>© 2026 Cher Digital Analytics. Built for salon owners who are done being invisible online.</p>
-    <a class="fp2" href="/privacy">Privacy policy</a>
+    <a class="footer-privacy" href="privacy.html">Privacy policy</a>
   </div>
 </footer>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+  const careerItems = document.querySelectorAll(".career-faq-item");
 
+  careerItems.forEach((item) => {
+    const question = item.querySelector(".career-faq-q");
+
+    question.addEventListener("click", () => {
+      const isActive = item.classList.contains("active");
+
+      // Vere open items ni close chesthundi (Optional)
+      careerItems.forEach((el) => el.classList.remove("active"));
+
+      // Current item ni toggle chesthundi
+      if (!isActive) {
+        item.classList.add("active");
+      }
+    });
+  });
+});
+</script>
 </body>
 </html>

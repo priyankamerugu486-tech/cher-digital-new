@@ -7,13 +7,14 @@
 <title>Cher Digital vs DIY vs Freelancer vs Generic Agency | Salon Marketing Comparison</title>
 <meta name="description" content="See exactly how Cher Digital Analytics compares to doing it yourself, hiring a freelancer, or using a generic marketing agency. The only salon marketing partner that also gets you found on ChatGPT, Perplexity and Google AI.">
 <meta name="keywords" content="salon marketing agency comparison, cher digital vs freelancer, salon marketing DIY vs agency, best salon marketing agency, AI search for salons, LLM visibility salon, ChatGPT salon marketing, salon marketing specialist vs generic agency">
-<link rel="canonical" href="https://www.cherdigitalanalytics.com/why-cher">
+<link rel="canonical" href="https://www.cherdigitalanalytics.com/comparison_page.html">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
 
 <meta property="og:title" content="Why Cher Digital vs DIY, Freelancer & Generic Agencies | Salon Marketing">
 <meta property="og:description" content="The only salon marketing partner that gets you found on Google, ChatGPT, Perplexity and every AI search engine — not just traditional search.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.cherdigitalanalytics.com/why-cher">
+<link rel="shortcut icon" href="images/cher-favicon.png">
 <link rel="stylesheet" href="css/styles.css">
 
 <script type="application/ld+json">
@@ -79,8 +80,6 @@
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap');
-
 :root {
   --rosy: #C49797;
   --cord: #834A49;
@@ -99,8 +98,6 @@
   --meh-bg: rgba(122,90,48,.1);
 }
 
-* { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
 body { font-family: var(--sans); background: var(--ivory); color: var(--black); overflow-x: hidden; }
 
 .hero { background: var(--black); padding: 80px 48px 72px; position: relative; overflow: hidden;grid-template-columns:1fr }
@@ -141,11 +138,30 @@ body { font-family: var(--sans); background: var(--ivory); color: var(--black); 
 .faq-top h2 em { font-style: italic; color: var(--rosy); }
 .faq-top-sub { font-size: 13px; font-weight: 300; color: rgba(248,246,227,.38); line-height: 1.7; max-width: 280px; text-align: right; }
 .faq-items { display: flex; flex-direction: column; }
-.faq-item { border-bottom: .5px solid rgba(248,246,227,.07); padding: 22px 0; border-top:0px solid transparent !important;border-right:0px solid transparent !important;border-left:0px solid transparent !important;background-color: transparent !important;}
+.faq-item { border-bottom: .5px solid rgba(248,246,227,.07); padding: 15px 0; border-top:0px solid transparent !important;border-right:0px solid transparent !important;border-left:0px solid transparent !important;background-color: transparent !important;}
+.faq-item::nth-child{border-bottom: none !important;}
+
+
 .faq-item:first-child { border-top: .5px solid rgba(248,246,227,.07); }
-.faq-q { font-size: 14px; font-weight: 500; color: var(--ivory); margin-bottom: 9px; display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; }
+.faq-q { font-size: 14px; font-weight: 500; color: var(--ivory); margin-bottom: 9px; display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; cursor: pointer;}
 .faq-icon { color: var(--rosy); flex-shrink: 0; font-size: 16px; }
-.faq-a { font-size: 13px; font-weight: 300; color: rgba(248,246,227,.44); line-height: 1.8; }
+.faq-a { font-size: 13px; font-weight: 300; color: rgba(248,246,227,.44); line-height: 1.8;  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  padding-bottom: 0;}
+  /* Show answer only when the item is active */
+.faq-item.active .faq-a {
+  max-height: 500px; /* Big enough to fit content */
+  opacity: 1;
+  padding-bottom: 20px;
+}
+
+/* Icon rotation effect */
+.faq-item.active .faq-icon {
+  transform: rotate(45deg);
+  display: inline-block;
+}
 @media (max-width: 960px) {
   
   .hero { padding: 56px 24px; } .hero-grid { grid-template-columns: 1fr; gap: 36px; }
@@ -171,27 +187,30 @@ body { font-family: var(--sans); background: var(--ivory); color: var(--black); 
 
 <nav class="nav">
   <div class="nav-logo">
-    <a href="index.html"><img src="images/logo.png" alt="Cher digital anlytics logo" class=""></a>
+    <a href="index.html">
+      <img src="images/logo.png" alt="Cher digital anlytics logo">
+    </a>
   </div>
   
   <input type="checkbox" id="nav-check">
-  <div class="nav-btn">
-    <input type="checkbox" id="nav-check">
 
-<label for="nav-check" class="nav-closer-overlay"></label>
+  <div class="nav-btn">
     <label for="nav-check">
       <span></span>
       <span></span>
       <span></span>
     </label>
   </div>
+
+  <label for="nav-check" class="nav-closer-overlay"></label>
   
   <div class="nav-links">
+    <label for="nav-check" class="nav-close-btn">&times;</label>
+    
     <a href="comparison_page.html">What We Do</a>
     <a href="about_page_final.html">About Us</a>
     <a href="packages_page_final.html">Packages</a>
     <a href="blog_page_seo.html">Blogs</a>
-    <a href="#">FAQ</a>
     <a href="careers_page.html">Careers</a>
     <a href="consultation_page.html">Contact Us</a>
     <a href="directory_page_seo.html">Map</a>
@@ -199,11 +218,7 @@ body { font-family: var(--sans); background: var(--ivory); color: var(--black); 
   </div>
 </nav>
 
-<div class="bc-wrap">
-  <nav class="bc" aria-label="Breadcrumb">
-    <a href="/">Home</a><span>›</span><span>Why Cher</span>
-  </nav>
-</div>
+
 
 <!-- HERO -->
 <header class="hero">
@@ -214,8 +229,8 @@ body { font-family: var(--sans); background: var(--ivory); color: var(--black); 
       <h1>There are four ways<br>to market your salon.<br><em>Only one actually works.</em></h1>
       <p class="hero-sub">DIY burns your time. Freelancers cover one thing. Generic agencies don't understand beauty. And <strong>none of them get you found on ChatGPT, Perplexity, or Google AI</strong> — the fastest-growing discovery channels for local businesses right now.</p>
       <div class="hero-btns">
-        <a href="#comparison" class="btn-p">See the full comparison <span>→</span></a>
-        <a href="/free-audit" class="btn-g">Get the free audit instead →</a>
+        <a href="#comparison" class="btn-p">See the full comparison <svg viewBox="0 0 12 12"><path d="M2 6h8M6 2l4 4-4 4"></path></svg> </a>
+        <a href="/free-audit" class="btn-g">Get the free audit instead <svg viewBox="0 0 12 12"><path d="M2 6h8M6 2l4 4-4 4"></path></svg></a>
       </div>
     </div>
     <div class="hero-options">
@@ -604,13 +619,13 @@ body { font-family: var(--sans); background: var(--ivory); color: var(--black); 
 
 <!-- FAQ -->
 <section class="faq-section">
-  <div class="faq-inner">
+  <div class="faq-inner" >
     <div class="faq-top">
       <h2>Still have questions<br>about <em>why Cher?</em></h2>
       <p class="faq-top-sub">Answered honestly — no agency spin.</p>
     </div>
     <div class="faq-items">
-      <div class="faq-item">
+      <div class="faq-item active">
         <div class="faq-q">What makes Cher Digital different from a generic marketing agency? <span class="faq-icon">+</span></div>
         <div class="faq-a">Cher Digital only works with salon and beauty businesses. Every strategy, every report, and every tactic is built specifically for the way salons attract and convert clients. Generic agencies apply the same playbook to every industry. We don't — and it shows in the results.</div>
       </div>
@@ -648,7 +663,7 @@ body { font-family: var(--sans); background: var(--ivory); color: var(--black); 
         Get the free audit PDF
         <span class="cta-btn-arr"><svg viewBox="0 0 10 10"><path d="M1.5 5h7M5.5 1.5l3.5 3.5-3.5 3.5"/></svg></span>
       </a>
-      <a href="packages_page_final.html" class="cta-outline">See packages & pricing →</a>
+      <a href="packages_page_final.html" class="cta-outline">See packages & pricing <svg viewBox="0 0 10 10"><path d="M1.5 5h7M5.5 1.5l3.5 3.5-3.5 3.5"/></svg></a>
       <span class="cta-note">Free · No call · Delivered in 48 hours · Zero obligation</span>
     </div>
   </div>
@@ -656,34 +671,70 @@ body { font-family: var(--sans); background: var(--ivory); color: var(--black); 
 
 <!-- FOOTER -->
 <footer class="footer">
-  <div class="ft">
-    <div>
-      <div class="fl">Cher Digital Analytics</div>
-      <p class="fp">Helping salon owners fill their books — without the marketing overwhelm.</p>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="footer-logo">Cher Digital Analytics</div>
+      <p>Helping salon owners fill their books — without the marketing overwhelm.</p>
     </div>
     <div>
-      <div class="fcl">Quick links</div>
+      <div class="footer-col-label">Quick links</div>
+      <a class="footer-link" href="comparison_page.html">What we do</a>
+      <a class="footer-link" href="about_page_final.html">About us</a>
+      <a class="footer-link" href="packages_page_final.html">Packages</a>
+      <a class="footer-link" href="blog_page_seo.html">Blogs</a>
+      <a class="footer-link" href="free_audit_page.html">audit</a>
+      <!-- <a class="footer-link" href="careers_page.html">career</a> -->
+       <!-- <a class="footer-link" href="directory_page_seo.html">Map</a> -->
+      <a class="footer-link" href="consultation_page.html">contact us</a>
+
+    </div>
+    <div>
+       <div class="footer-col-label">Get in touch</div>
+      <div class="footer-contact-item"><a href="tel:+(413) 377-8945">(413) 377-8945</a></div>
+      <div class="footer-contact-item"><a href="mailto:hello@cherdigitalanalytics.com">hello@cherdigitalanalytics.com</a></div>
+    </div>
+    <div>
+       <div class="footer-col-label">Stalk us on our socials</div>
+       <p class="footer-text">( we promise we don’t just post spreadsheets)</p>
+      <div class="icons social">
+        <a href="https://www.instagram.com/cherdigitalanalytics?igsh=MTZ5dWk3Z3cyOTZ6NA%3D%3D&amp;utm_source=qr"><img src="images/instagram.png" alt="salon-marketing-instagram"></a>
+        <a href="https://www.linkedin.com/company/cherdigitalanalytics/?viewAsMember=true"><img src="images/linkedin.png" alt="salon-marketing-linkedin"></a>
+        <a href="https://www.pinterest.com/cherdigitalanalytics/?invite_code=0a62898b98db44f68b26e4aa1400467b&amp;sender=592505032134619650"><img src="images/pinterest.png" alt="salon-marketing-pinterest"></a>
+      </div>
       
-      <a class="flink" href="comparison_page.html">What we do</a>
-      <a class="flink" href="about_page_final.html">About us</a>
-      <a class="flink" href="packages_page_final.html">Packages</a>
-      <a class="flink" href="blog_page_seo.html">Blogs</a>
-      <a class="flink" href="free_audit_page.html">Free salon audit</a>
-      <!-- <a class="flink" href="careers_page.html">career</a> -->
-       <!-- <a class="flink" href="directory_page_seo.html">Map</a> -->
-      <a class="flink" href="consultation_page.html">contact us</a>
-    </div>
-    <div>
-      <div class="fcl">Get in touch</div>
-      <div class="fci"><a href="tel:+(413) 377-8945">(413) 377-8945</a></div>
-      <div class="fci"><a href="mailto:hello@cherdigitalanalytics.com">hello@cherdigitalanalytics.com</a></div>
     </div>
   </div>
-  <div class="fb">
+  <div class="footer-bottom">
     <p>© 2026 Cher Digital Analytics. Built for salon owners who are done being invisible online.</p>
-    <a class="fp2" href="/privacy">Privacy policy</a>
+    <a class="footer-privacy" href="privacy.html">Privacy policy</a>
   </div>
 </footer>
+<script>
+ document.querySelectorAll('.nav-links a').forEach(link => {
+    if (link.href === window.location.href) {
+        link.classList.add('active');
+    }
+});
+document.addEventListener("DOMContentLoaded", () => {
+  const faqItems = document.querySelectorAll(".faq-item");
 
+  faqItems.forEach((item) => {
+    const question = item.querySelector(".faq-q");
+
+    question.addEventListener("click", () => {
+      // 1. Check if the clicked item is already active
+      const isActive = item.classList.contains("active");
+
+      // 2. Close all items (Optional: andaru close ayyi okkate open undali ante)
+      faqItems.forEach((el) => el.classList.remove("active"));
+
+      // 3. If the clicked one wasn't active, open it
+      if (!isActive) {
+        item.classList.add("active");
+      }
+    });
+  });
+});
+</script>
 </body>
 </html>
