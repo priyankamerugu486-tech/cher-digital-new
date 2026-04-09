@@ -459,10 +459,10 @@
   window.addEventListener('load', function() {
     
     
-    // ---  line ni delete  (localStorage.clear()) ---
+    // ---  line delete  (localStorage.clear()) ---
     // localStorage.removeItem('cherWeeklyPopup'); 
 
-    console.log("Script start ayindi... 5 seconds aagandi.");
+    // console.log("Script start ayindi... 5 seconds aagandi.");
 
     // 5 Seconds wait chestundi
     setTimeout(function() {
@@ -481,10 +481,10 @@
         
         // localStorage.setItem('cherWeeklyPopup', 'true'); 
       } else {
-        // Okavela element lekapothe console lo error chupisthundi
-        console.error("ERROR: 'overlay' ane ID tho element dorakaledu. HTML lo check cheyandi.");
+        
+        console.error("ERROR: 'overlay'");
       }
-    }, 5000); // 5000 = 5 seconds
+    }, 3000); // 5000 = 5 seconds
   });
 
   // Close Button Logic
@@ -511,8 +511,7 @@
     link.addEventListener("click", () => {
       navCheck.checked = false;
     });
-  });
-});
+  });;
 
 
 </script>
